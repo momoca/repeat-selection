@@ -1,0 +1,42 @@
+{
+    "name": "repeat-selection",
+    "displayName": "重复选择文本",
+    "description": "在选择文本后按下ctrl+shift+d将复制出一个选择的文本。",
+    "version": "1.0.3",
+    "engines": {
+        "vscode": "^1.1.37"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.repeatSelectionrepeatSelection"
+    ],
+    "icon": "icon.png",
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.repeatSelection",
+                "title": "重复选择文本"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.repeatSelection",
+                "key": "ctrl+shift+d",
+                "when": "editorTextFocus && editorHasSelection"
+            }
+        ]
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Momoca",
+    "repository": "https://github.com/momoca/repeat-selection.git",
+    "license": "ISC",
+    "devDependencies": {
+        "vscode": "^1.1.37"
+    }
+}
