@@ -2,7 +2,7 @@
     "name": "repeat-selection",
     "displayName": "重复选择文本",
     "description": "在选择文本后按下ctrl+shift+d将复制出一个选择的文本。",
-    "version": "1.0.3",
+    "version": "1.0.6",
     "engines": {
         "vscode": "^1.1.37"
     },
